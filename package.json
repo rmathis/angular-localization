@@ -1,0 +1,12 @@
+{
+	"jam":{
+		"baseUrl": "js",
+		"packageDir": "lib",
+		"dependencies": {
+			"underscore":null,
+			"jquery":null,
+			"angularjs":null,
+			"less":null
+		}
+	}
+}
