@@ -10,7 +10,9 @@ app.locale = angular.module('locale', ['ngResource']);
 
 // Controller
 
-app.locale.controller('LocaleCtrl', function ($scope, $location, $locale, Translation) {});
+app.locale.controller('LocaleCtrl', function ($scope, $location, $locale, Translation) {
+	$scope.locale = $locale.id;
+});
 
 // Router
 
@@ -27,7 +29,7 @@ app.locale.filter('localize', ['$locale', 'Translation', function ($locale, Tran
 	var translations = Translation.get({locale:$locale.id});
 
 	return function (input) {
-		return translations[input];
+		return translations[input] || input;
 	};
 }]);
 
