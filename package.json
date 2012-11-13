@@ -1,12 +1,14 @@
 {
-	"jam":{
-		"baseUrl": "js",
-		"packageDir": "lib",
-		"dependencies": {
-			"underscore":null,
-			"jquery":null,
-			"angularjs":null,
-			"less":null
-		}
+	"name": "Angular-JS",
+	"description": "Angular Localization test",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app"
+	},
+	"dependencies": {
+		"express": "3.x",
+		"ejs": "*",
+		"less-middleware": "*"
 	}
 }
